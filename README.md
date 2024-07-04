@@ -1,3 +1,3 @@
-# InkayAquamarine - Aroma patches for Aquamarine
+# InkayStupidverse - Aroma Patches for Stupidverse
 
-A mod of Inkay by Pretendo but for Aquamarine on the Wii U for the Aroma CFW environment
+InkayStupidverse is a mod of InkayAquamarine, which is is a mod of Inkay by Pretendo Network. This project changes Aquamarine to Stupidverse on your Wii U!
