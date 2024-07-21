@@ -47,13 +47,13 @@
     Mandatory plugin information.
     If not set correctly, the loader will refuse to use the plugin.
 **/
-WUPS_PLUGIN_NAME("Inkay-Stupidverse");
-WUPS_PLUGIN_DESCRIPTION("Stupidverse Patcher");
+WUPS_PLUGIN_NAME("Inkay-Miiverse");
+WUPS_PLUGIN_DESCRIPTION("Patcher that I'm gonna use to mess around with Miiverse");
 WUPS_PLUGIN_VERSION("v1.2");
-WUPS_PLUGIN_AUTHOR("Pretendo contributors (modded by TraceEntertains and NoNameGiven)");
+WUPS_PLUGIN_AUTHOR("Pretendo contributors (modded by TraceEntertains, NoNameGiven, SkyeDoesThings)");
 WUPS_PLUGIN_LICENSE("ISC");
 
-WUPS_USE_STORAGE("inkay-Stupidverse");
+WUPS_USE_STORAGE("inkay-Miiverse");
 WUPS_USE_WUT_DEVOPTAB();
 
 #include <kernel/kernel.h>
@@ -129,8 +129,8 @@ INITIALIZE_PLUGIN() {
         for (const auto& patch : url_patches) {
             write_string(patch.address, patch.url);
         }
-        DEBUG_FUNCTION_LINE("Stupidverse URL and NoSSL patches applied successfully.");
-        StartNotificationThread("Using Stupidverse");
+        DEBUG_FUNCTION_LINE("Miiverse URL and NoSSL patches applied successfully.");
+        StartNotificationThread("Using custom Miiverse");
     }
     else {
         DEBUG_FUNCTION_LINE("Stupidverse URL and NoSSL patches skipped.");
@@ -156,13 +156,13 @@ ON_APPLICATION_START() {
     WHBLogUdpInit();
     WHBLogCafeInit();
 
-    DEBUG_FUNCTION_LINE("Inkay-Stupidverse: hewwo!\n");
+    DEBUG_FUNCTION_LINE("Inkay-Miiverse: hewwo!\n");
 
     setup_olv_libs();
     matchmaking_notify_titleswitch();
 }
 
 ON_APPLICATION_ENDS() {
-    DEBUG_FUNCTION_LINE("Inkay-Stupidverse: shutting down...\n");
+    DEBUG_FUNCTION_LINE("Inkay-Miiverse: shutting down...\n");
     StopNotificationThread();
 }
