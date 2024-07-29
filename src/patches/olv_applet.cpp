@@ -40,26 +40,26 @@ const char wave_new[] = {
 const unsigned char miiverse_green_highlight[] = {
     0x82, 0xff, 0x05, 0xff, 0x82, 0xff, 0x05, 0xff, 0x1d, 0xff, 0x04, 0xff, 0x1d, 0xff, 0x04, 0xff
 };
-const unsigned char cappuccino_pink_highlight[] = {
+const unsigned char miiverse_pink_highlight[] = {
     0xC1, 0xB6, 0xFF, 0xFF, 0xC1, 0xB6, 0xFF, 0xFF, 0xC1, 0xB6, 0xFF, 0xFF, 0xC1, 0xB6, 0xFF, 0xFF
 };
 const unsigned char miiverse_green_touch1[] = {
     0x94, 0xd9, 0x2a, 0x00, 0x57, 0xbd, 0x12, 0xff
 };
-const unsigned char cappuccino_pink_touch1[] = {
+const unsigned char miiverse_pink_touch1[] = {
     0xFF, 0xB6, 0xC1, 0x00, 0xFF, 0xB6, 0xC1, 0xFF
 };
 const unsigned char miiverse_green_touch2[] = {
     0x57, 0xbd, 0x12, 0x00, 0x94, 0xd9, 0x2a, 0xff
 };
-const unsigned char cappuccino_pink_touch2[] = {
+const unsigned char miiverse_pink_touch2[] = {
     0xFF, 0xB6, 0xC1, 0x00, 0xFF, 0xB6, 0xC1, 0xFF
 };
 
 const replacement replacements[] = {
-    {miiverse_green_highlight, cappuccino_pink_highlight},
-    {miiverse_green_touch1,    cappuccino_pink_touch1},
-    {miiverse_green_touch2,    cappuccino_pink_touch2},
+    {miiverse_green_highlight, miiverse_pink_highlight},
+    {miiverse_green_touch1,    miiverse_pink_touch1},
+    {miiverse_green_touch2,    miiverse_pink_touch2},
 };
 
 static std::optional<FSFileHandle> rootca_pem_handle{};
