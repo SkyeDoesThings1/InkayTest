@@ -133,7 +133,7 @@ INITIALIZE_PLUGIN() {
         StartNotificationThread("Using custom Miiverse");
     }
     else {
-        DEBUG_FUNCTION_LINE("Stupidverse URL and NoSSL patches skipped.");
+        DEBUG_FUNCTION_LINE("Custom Miiverse URL and NoSSL patches skipped.");
         StartNotificationThread("Using default Miiverse");
     }
 

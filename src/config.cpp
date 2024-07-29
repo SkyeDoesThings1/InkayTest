@@ -114,12 +114,12 @@ WUPS_GET_CONFIG() {
     }
 
     WUPSConfigHandle config;
-    WUPSConfig_CreateHandled(&config, "Inkay-Stupidverse");
+    WUPSConfig_CreateHandled(&config, "Inkay");
 
     WUPSConfigCategoryHandle patching_cat;
     WUPSConfig_AddCategoryByNameHandled(config, "Patching", &patching_cat);
 
-    WUPSConfigItemBoolean_AddToCategoryHandled(config, patching_cat, "connect_to_network", "Connect to Stupidverse", Config::connect_to_network, &connect_to_network_changed);
+    WUPSConfigItemBoolean_AddToCategoryHandled(config, patching_cat, "connect_to_network", "Use custom Miiverse", Config::connect_to_network, &connect_to_network_changed);
     
     WUPSConfigCategoryHandle boss_cat;
     WUPSConfig_AddCategoryByNameHandled(config, "BOSS settings", &boss_cat);
